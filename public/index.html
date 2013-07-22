@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app="Sheets">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pain.js</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/directives.js"></script>
+
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		
+		<div paneset orientation="vertical">
+			<div pane type="fixed" size="300px" style="background: #f00;">
+			
+				<div paneset orientation="horizontal">
+	
+					<div pane type="dynamic" weight="1" style="background: #ff0;"></div>
+
+					<div pane type="dynamic" weight="1">
+						
+						<div paneset orientation="horizontal">
+							<div pane type="dynamic" weight="1"></div>
+
+							<div pane type="dynamic" weight="1" style="background: #0ff;"></div>
+
+						</div>
+
+					</div>
+
+				</div>	
+			
+			</div>
+
+			<div pane type="dynamic" weight="1" style="background: #0f0;">
+
+
+			</div>
+
+			<div pane type="dynamic" weight="1" style="background: #00f;">
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
